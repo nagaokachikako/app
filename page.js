@@ -9,7 +9,7 @@ export default function ImageUploader() {
   const [watermarkEnabled, setWatermarkEnabled] = useState(false); // 透かしのON/OFF
   const canvasRef = useRef(null); // Canvasの参照
 
-  // 【画像を追加する関数】
+  // 【画像を追加する関数です】
   const handleImageUpload = (event) => {
     const files = Array.from(event.target.files);
     const newImages = files.map((file) => ({
