@@ -1,0 +1,101 @@
+/* 🌟 画像アップロードサイトのデザイン */
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  background: #fffaf0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(255, 182, 193, 0.6);
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  color: #ff6b81;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* ボタンのデザイン */
+.watermarkButton,
+.downloadAllButton {
+  background: linear-gradient(135deg, #ff69b4, #ff1493);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(255, 20, 147, 0.5);
+  margin: 5px;
+}
+
+.watermarkButton:hover,
+.downloadAllButton:hover {
+  background: #ff1493;
+}
+
+/* 画像プレビューのコンテナ */
+.imagePreview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+/* 各画像のスタイル */
+.imageContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(255, 105, 180, 0.5);
+}
+
+/* 🌟 透かし（写真家の名前を右下に表示） */
+.photographerName {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  font-size: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: #333;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+/* 削除ボタン & ダウンロードボタン */
+.deleteButton,
+.downloadButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #ff3b5a;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.downloadButton {
+  right: 35px;
+}
+
+.deleteButton:hover,
+.downloadButton:hover {
+  background: #d00027;
+}
